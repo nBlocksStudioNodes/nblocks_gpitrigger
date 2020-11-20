@@ -17,8 +17,7 @@ uint32_t convert_value(float value, nBlocks_OutputType value_type) {
 
  
 
-/// GPI
-nBlock_GPI::nBlock_GPI(PinName pinIn, float value, nBlocks_OutputType value_type): _in(pinIn) {
+nBlock_GPITrigger::nBlock_GPITrigger(PinName pinIn, float value, nBlocks_OutputType value_type): _in(pinIn) {
     _value_float = value;
     outputType[0] = value_type;
     outputType[1] = value_type;
@@ -28,7 +27,7 @@ nBlock_GPI::nBlock_GPI(PinName pinIn, float value, nBlocks_OutputType value_type
     return;
 }
 
-void nBlock_GPI::endFrame(void) {
+void nBlock_GPITrigger::endFrame(void) {
     uint32_t _temp_value;
     
     // Rising edge
