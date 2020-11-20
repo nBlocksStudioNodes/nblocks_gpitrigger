@@ -1,0 +1,32 @@
+{
+    "category": "Input",
+    "inputs": 0, 
+    "name": "GPITrigger", 
+    "parameters": [
+        {
+            "default": "P0_10", 
+            "type": "raw", 
+            "name": "Pin", 
+            "value": "P0_10", 
+            "options": []
+        },
+        {
+            "default": "1", 
+            "type": "raw", 
+            "name": "Value", 
+            "value": "1", 
+            "options": []
+        }
+    ], 
+    "outputs": 3, 
+    "labels": {
+        "input": [], 
+        "output": []
+    }, 
+    "schematic_pins": {
+        "inputs": [], 
+        "outputs": [1,2,3]
+    }, 
+    "repository": "https://github.com/nblocksStudioNodes/nblocks_gpi", 
+    "revision": ""
+}
