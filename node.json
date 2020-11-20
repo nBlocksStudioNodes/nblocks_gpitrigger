@@ -1,32 +1,54 @@
 {
     "category": "Input",
-    "inputs": 0, 
-    "name": "GPITrigger", 
+    "name": "GPITrigger",
+    "inputs": 0,
+    "outputs": 3,
     "parameters": [
         {
-            "default": "P0_10", 
-            "type": "raw", 
-            "name": "Pin", 
-            "value": "P0_10", 
-            "options": []
+            "name": "PinIn",
+            "type": "raw",
+            "default": "P0_17",
+            "options": [
+                ""
+            ],
+            "value": "P0_17"
         },
         {
-            "default": "1", 
-            "type": "raw", 
-            "name": "Value", 
-            "value": "1", 
-            "options": []
+            "name": "Value",
+            "type": "raw",
+            "default": "3",
+            "options": [
+                ""
+            ],
+            "value": "3"
+        },
+        {
+            "name": "ValueType",
+            "type": "option",
+            "default": "OUTPUT_TYPE_INT",
+            "options": [
+                "OUTPUT_TYPE_INT\r",
+                "OUTPUT_TYPE_FLOAT\r",
+                ""
+            ],
+            "value": "OUTPUT_TYPE_INT"
         }
-    ], 
-    "outputs": 3, 
+    ],
     "labels": {
-        "input": [], 
+        "input": [],
         "output": []
-    }, 
+    },
     "schematic_pins": {
-        "inputs": [], 
-        "outputs": [1,2,3]
-    }, 
-    "repository": "https://github.com/nblocksStudioNodes/nblocks_gpi", 
+        "inputs": [
+            0
+        ],
+        "outputs": [
+            1,
+            2,
+            3
+        ]
+    },
+    "repository": "https://github.com/nBlocksStudioNodes/nblocks_gpitrigger",
     "revision": ""
 }
+   
