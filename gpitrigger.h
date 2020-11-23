@@ -1,5 +1,5 @@
-#ifndef __NB_GPI
-#define __NB_GPI
+#ifndef __NB_GPITRIGGER
+#define __NB_GPITRIGGER
 
 #include "mbed.h"
 #include "nworkbench.h"
